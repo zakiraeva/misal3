@@ -1,56 +1,87 @@
 <!DOCTYPE html>
 <head>
 <style>
-  img {
-    width: 150px;
-    height: 150x;
-  }
-  h1 {
-    text-align: center;
-    text-decoration: underline overline dotted blue;
-    text-transform: uppercase;
-    font-size: 25px;
-    padding-left: 10px;
-    }
-  h2 {
-    text-align: center;
-    text-decoration: underline overline dotted blue;
-    text-transform: uppercase;
-    font-size: 25px;
-    }
-      }
- .uch {
-    text-align: center;
-    text-decoration: underline overline dotted blue;
-    text-transform: uppercase;
-    font-size: 25px;
-    }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
- header {
-      display: flex;
-      justify-content:space-between;
-      flex-wrap: wrap;
-      border: 2px solid green;
-    }
-  p {
-      margin: 10px 5px;
-      color: orange; 
-      text-align: center;
-    }
-  .surotuch {
-      padding-right: 15px;
+    
+    width: 80%;
+    margin: 0 auto;
   }
+
+ .nature img {
+  max-width: 100%;
+  width: 250px;
+  object-fit: cover;
+ }
+
+  .vadopad img {
+  max-width: 100%;
+  width: 250px;
+  object-fit: cover;
+ }
+
+ .water img {
+  max-width: 100%;
+  width: 250px;
+  object-fit: cover;
+ }
+
+ .forest img {
+  max-width: 100%;
+  width: 250px;
+  object-fit: cover;
+ }
+
+ .forest, .nature, .water, .vadopad {
+  width: 200px;
+ }
+h1 {
+  text-align: center;
+  color: hotpink;
+  text-transform: uppercase;
+   text-decoration: underline overline dotted blue;
+}
+ 
 </style>
 </head>
 
 <body>
   <header>
-    <h1>nature</h1>
+    <h1>Surot galeriasy</h1>
+
+<div class="gallery">
+
+    <div class="nature">
+    <h2>nature</h2>
     <img src="https://imgs.search.brave.com/TzseedIIvZuVbsF7hl9jvKpWj9YV_4l3OJx2HXidlRY/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDI2MTEx/ODEuanBn">
-    <h2>vadopad</h2>
+  </div>
+    
+  <div class="vadopad">
+      <h2>vadopad</h2>
+      <img src="https://imgs.search.brave.com/TAVpRx-vZIdRgeLVBttv2OxbKw-TLQ8hvfxVZL6psfo/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJ0YWcuY29t/L3dhbGxwYXBlci9m/dWxsLzEvYy85LzY1/MzMwMi1iZXN0LW5h/dHVyZS13YWxscGFw/ZXItaGlnaC1kZWZp/bml0aW9uLTI1NjB4/MTYwMC5qcGc">
+  </div>
+
+
+  <div class="water">
+      <h2>water</h2>
+      <img src="https://imgs.search.brave.com/TAVpRx-vZIdRgeLVBttv2OxbKw-TLQ8hvfxVZL6psfo/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJ0YWcuY29t/L3dhbGxwYXBlci9m/dWxsLzEvYy85LzY1/MzMwMi1iZXN0LW5h/dHVyZS13YWxscGFw/ZXItaGlnaC1kZWZp/bml0aW9uLTI1NjB4/MTYwMC5qcGc">
+  </div>
+
+  <div class="forest">
+    <h2>forest</h2>
     <img src="https://imgs.search.brave.com/TAVpRx-vZIdRgeLVBttv2OxbKw-TLQ8hvfxVZL6psfo/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJ0YWcuY29t/L3dhbGxwYXBlci9m/dWxsLzEvYy85LzY1/MzMwMi1iZXN0LW5h/dHVyZS13YWxscGFw/ZXItaGlnaC1kZWZp/bml0aW9uLTI1NjB4/MTYwMC5qcGc">
-    <h2 class="uch">forest</h2>
-    <img class="surotuch" src="https://imgs.search.brave.com/KP4d-bYj9__s1NTpaMQgS2SEE_OoZ2a3wT9yovg1jn4/rs:fit:1200:1200:1/g:ce/aHR0cDovL3dhbGx1/cC5uZXQvd3AtY29u/dGVudC91cGxvYWRz/LzIwMTYvMDEvMjAy/NjQtbmF0dXJlLWZv/cmVzdC10cmVlcy1n/cmVlbi5qcGc">
-    <p>October 25, 2001 - Nature, in the broadest sense, is the physical world or universe. "Nature" can refer to the phenomena of the physical world, and also to life in general.</p>
- </header>
+    
+  </div>
+   
+</div>
+  
+  </header>
 </body>
+
+
+
+
+
